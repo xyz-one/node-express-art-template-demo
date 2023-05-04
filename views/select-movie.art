@@ -1,0 +1,18 @@
+<!-- 选电影 -->
+<!-- 使用 layout 的头部与尾部 -->
+{{extend './share/layout.art'}}
+<!-- 页面标题 -->
+{{block 'title'}}{{title}}{{/block}}
+<!-- 当前页面的 css 引入 -->
+{{block 'moreCss'}}
+<link rel='stylesheet' type='text/css' href='/css/index.css' />
+{{/block}}
+<!-- 当前页面的 js 引入 -->
+{{block 'moreScript'}}
+<script src="/js/index.js"></script>
+{{/block}}
+
+<!-- 主要内容 -->
+{{block 'content'}}
+选电影
+{{/block}}

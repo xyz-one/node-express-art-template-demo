@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta content="telephone=no" name="format-detection" />
+        <title>{{block 'title'}}电影网站{{/block}}</title>
+        {{block 'meta_key'}}
+        <meta name="keywords" content="关键字">
+        <meta name="description" content="描述">
+        {{/block}}
+        <link rel="shortcut icon" href="/img/logo.jpg" />
+
+        <link rel="stylesheet" href="/css/share/base.css">
+        <link rel="stylesheet" href="/css/share/index.css">
+
+        <script type='text/javascript' src="/uilts/jquery-1.7.2.min.js"></script>
+
+
+        {{block 'moreCss'}}{{/block}}
+    </head>
+
+    <body>
+        <header></header>
+
+        <main>
+            {{block 'content'}}{{/block}}
+        </main>
+
+        <footer></footer>
+
+        <script type='text/javascript' src="/js/share/index.js"></script>
+        {{block 'moreScript'}}{{/block}}
+    </body>
+
+</html>
